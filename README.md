@@ -58,6 +58,20 @@ This is factorial calculator :)
 factorial(10) = 3628800
 ```
 
+### Use from other repository as dependency
+
+You can use [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html) to import this project to other project as dependency.
+
+```cmake
+include(FetchContent)
+FetchContent_Declare(
+    <project_name>
+    GIT_REPOSITORY <repository_url>
+    GIT_TAG <release_version>
+)
+FetchContent_MakeAvailable(project_name)
+```
+
 ## License
 
 This repository is published under [MIT License](LICENSE).

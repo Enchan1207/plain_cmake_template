@@ -5,7 +5,7 @@ add_library(${library_name})
 target_sources(${library_name} PRIVATE
     func.c
 )
-target_include_directories(${library_name} PRIVATE
+target_include_directories(${library_name} PUBLIC
     ${PROJECT_SOURCE_DIR}/include
 )
 target_compile_options(${library_name} PRIVATE

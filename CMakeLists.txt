@@ -5,6 +5,7 @@ project(plain_cmake_template
     DESCRIPTION "Plain CMake template"
     LANGUAGES C CXX
 )
+enable_language(CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
