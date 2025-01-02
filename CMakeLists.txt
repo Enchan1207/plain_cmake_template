@@ -13,16 +13,16 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_subdirectory(src)
 
 # Unit testing
-option(${CMAKE_PROJECT_NAME}_BUILD_TESTS "Enable testing of ${CMAKE_PROJECT_NAME}" OFF)
-if(${CMAKE_PROJECT_NAME}_BUILD_TESTS)
+option(plain_cmake_template_BUILD_TESTS "Enable testing of plain_cmake_template" OFF)
+if(plain_cmake_template_BUILD_TESTS)
     set(INSTALL_GTEST OFF)
     enable_testing()
-    message(NOTICE "${CMAKE_PROJECT_NAME}: unit testing enabled")
+    message(NOTICE "plain_cmake_template: unit testing enabled")
     add_subdirectory(tests)
 endif()
 
 # cli application
-option(${CMAKE_PROJECT_NAME}_BUILD_CLI "Enable build cli application of ${CMAKE_PROJECT_NAME}" OFF)
-if(${CMAKE_PROJECT_NAME}_BUILD_CLI)
+option(plain_cmake_template_BUILD_CLI "Enable build cli application of plain_cmake_template" OFF)
+if(plain_cmake_template_BUILD_CLI)
     add_subdirectory(cli)
 endif()
